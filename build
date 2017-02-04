@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export SERVER_ENV=dev
+exec mvn "$@" clean install

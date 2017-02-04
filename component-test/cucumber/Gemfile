@@ -1,0 +1,7 @@
+source 'https://rubygems.org' do
+  gem 'rubocop'
+end
+
+source 'https://gems.cloud.bbc.co.uk' do
+  gem 'mod_av_cucumber', '>=0.61'
+end
