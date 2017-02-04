@@ -9,6 +9,8 @@ When(/list of integers (.*) with (.*) of entries is input/) do |list, numbers|
   input = make_input(numbers, list)
 end
 
+# see http://ruby.bastardsbook.com/chapters/external-programs/
+# for explanation about IO.popen
 Then(/arraySorter sorts list/) do
   IO.popen('../../run', 'r+') do |pipe|
     pipe.puts(input)
